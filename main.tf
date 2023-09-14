@@ -108,7 +108,7 @@ resource "azurerm_linux_virtual_machine" "az-waf-vm" {
   custom_data = filebase64("azure-user-data.sh")
 
   admin_ssh_key {
-    username   = "wildes"
+    username   = "alarm"
     public_key = file("~/.ssh/id_rsa.pub")
   }
 
@@ -158,7 +158,7 @@ resource "azurerm_linux_virtual_machine" "az-waf-vm-2" {
   custom_data = filebase64("azure-user-data.sh")
 
   admin_ssh_key {
-    username   = "wildes"
+    username   = "alarm"
     public_key = file("~/.ssh/id_rsa.pub")
   }
 
